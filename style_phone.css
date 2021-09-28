@@ -1,49 +1,211 @@
-:root{
-    --blue: #446CB1;
-    --white: #fff;
-    --dark: #000;
-    --light: #ACC3EF;
-    --red: #F47167;
+@media only screen and (max-width: 600px) {
+    body {
+      
+    }
 
-}
-.neu-in{
-    border-radius: 10px;
-    background: #ffffff;
-    box-shadow: inset 6px 6px 11px #e6e6e6,
-                inset -6px -6px 11px #ffffff;
-}
-
-.neu-blue{
-    border-radius: 46px;
-background: var(--white);
-box-shadow:  16px 16px 32px #99aed5,
-             -16px -16px 32px #bfd8ff;
-}
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    /*Hero section ------------------ hero section*/
+#hero{
     width: 100vw;
-    overflow-x: hidden;
+    overflow: hidden;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    background-image: url(herobg_op.webp);
+    background-size: 85vh;
+    background-position-x: 45vw;
+    background-position-y: 40vh;
+    background-repeat: no-repeat;
+    
+}
 
-   }
-   
-   h1, h2, h3, h4, h5, h6, strong {
-    font-family: 'Archivo', sans-serif;
-   }
+#hero1{
+    margin-top: 5vh;
+    width: 90vw;
+    padding: 20% 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#hero h1{
+    font-size: 1.7rem;
+}
+#hero h3{
+    font-size: 1.1rem;
+    margin-top: 15vh;
+    width: 60vw;
+}
+#hero-slogan strong{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: var(--blue);
+}
+#hero2{
+    width: 60vw;
+    overflow: hidden;
+}
+#hero-img{
+    display: none;
+    max-width: 80vw;
+    padding-top: 30%;
+    overflow: hidden;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
-html,
-body {
+/*EMAIL FORM-------------------EMAIL FORM*/
+
+
+  #hero-mail1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container1 {
+    max-width: 500px;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
+    margin-bottom: 20px;
+  }
+  .form-group {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 80%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+  #spam{
+      max-width: 10vw !important;
+      overflow: hidden;
+
+  }
+  textarea {
+    resize: vertical;
+  }
+  button[type="submit"] {
+    width: 80%;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--light);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease background-color;
+  }
+  button[type="submit"]:hover {
+    background-color: var(--blue);
+  }
+  #status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  #status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+  }
+  #status.error {
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+  }
+  @keyframes status {
+    0% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+  
+#feat{
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    padding: 2vw 0;
+    background-color: var(--light);
+}
+
+.feat-div{
+    max-width: 20vw;
+    min-width: 200px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 20px;
+    margin: 5vw;
+}
+
+.feat-img{
+    width: 60px; 
+}
+
+.feat-text{
+    text-align: center;
 
 }
-/*-- Inspiration taken from abdo steif -->
-/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
 
-/* Navbar section */
+#click{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh 4vw;
+    overflow: hidden;
+}
+
+#click1{
+    max-width: 90vw;
+    margin: 0;
+}
+
+#click2{
+    width: 80vw;
+    padding: 5% 10%;
+    margin-top: 5vw;
+    text-align: center;
+    line-height: 1.5;
+}
+#click2 h1{
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+
+}
+#click2 strong{
+    color: var(--blue) !important;
+    font-weight: 900;
+}
+
+  /*Nav-barrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
+  /* Navbar section */
 
 .nav {
     width: 100%;
@@ -54,16 +216,20 @@ body {
 }
 
 .nav div.logo {
+    position: absolute;
+    top: 0;
     float: left;
     width: auto;
     height: auto;
-    padding-left: 3rem;
+    padding-left: 2rem;
+    margin-top: 0;
 }
 
 .nav div.logo a {
     text-decoration: none;
     color: var(--dark);
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    top: 0;
 }
 
 .nav div.logo a:hover {
@@ -393,187 +559,9 @@ body {
 	}
 }
 
-/*Hero section ------------------ hero section*/
-#hero{
-    width: 100vw;
-    overflow: hidden;
-    height: 100vh;
-    display:flex;
-    justify-content: flex-start;
-}
-
-#hero1{
-    width: 35vw;
-    padding: 10% 5% 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-#hero h1{
-    font-size: 3rem;
-}
-#hero h3{
-    font-size: 1.5rem;
-}
-#hero-slogan strong{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 800;
-    color: var(--blue);
-}
-#hero2{
-    width: 60vw;
-    overflow: hidden;
-}
-#hero-img{
-    max-width: 80vw;
-    padding-top: 30%;
-    overflow: hidden;
-}
-img{
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-}
-
-/*EMAIL FORM-------------------EMAIL FORM*/
-
-
-  #hero-mail1 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .container1 {
-    max-width: 500px;
-    margin: 0;
-    margin-bottom: 20px;
-  }
-  .form-group {
-    width: 100%;
-    margin-top: 20px;
-    font-size: 1.3rem;
-    font-weight: 600;
-  }
-  .form-group input,
-  .form-group textarea {
-    width: 80%;
-    padding: 5px;
-    font-size: 18px;
-    border: 1px solid rgba(128, 128, 128, 0.199);
-    border-radius: 10px;
-    margin-top: 5px;
-  }
-  
-  textarea {
-    resize: vertical;
-  }
-  button[type="submit"] {
-    width: 80%;
-    border: none;
-    outline: none;
-    padding: 10px 0;
-    font-size: 1.2rem;
-    border-radius: 10px;
-    color: white;
-    background-color: var(--light);
-    text-align: center;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: 0.3s ease background-color;
-  }
-  button[type="submit"]:hover {
-    background-color: var(--blue);
-  }
-  #status {
-    width: 90%;
-    max-width: 500px;
-    text-align: center;
-    padding: 10px;
-    margin: 0 auto;
-    border-radius: 8px;
-  }
-  #status.success {
-    background-color: rgb(211, 250, 153);
-    animation: status 4s ease forwards;
-  }
-  #status.error {
-    background-color: rgb(250, 129, 92);
-    color: white;
-    animation: status 4s ease forwards;
-  }
-  @keyframes status {
-    0% {
-      opacity: 1;
-      pointer-events: all;
-    }
-    90% {
-      opacity: 1;
-      pointer-events: all;
-    }
-    100% {
-      opacity: 0;
-      pointer-events: none;
-    }
-  }
   
 
-#feat{
-    width: 100vw;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5vh;
-    padding: 10vh 0;
-    background-color: var(--light);
-}
-
-.feat-div{
-    max-width: 25vw;
-    min-width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    padding: 20px;
-}
-
-.feat-img{
-    width: 80px; 
-}
-
-.feat-text{
-    text-align: center;
-
-}
-
-#click{
-    width: 100vw;
-    display: flex;
-    padding: 5vh 4vw;
-    overflow: hidden;
-}
-
-#click1{
-    max-width: 50vw;
-    margin: 0;
-}
-
-#click2{
-    width: 50vw;
-    padding: 5% 10%;
-    text-align: left;
-    line-height: 1.5;
-}
-#click2 h1{
-    font-size: 3.5rem !important;
-    font-weight: 800 !important;
-
-}
-#click2 strong{
-    color: var(--blue) !important;
-    font-weight: 900;
-}
 
 
-/*MEDIA----MEDIA------MEDIA--------MEDIA--------MEDIA----MEDIA-------*/
 
+  }
