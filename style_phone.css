@@ -4,6 +4,8 @@
     }
 
     /*Hero section ------------------ hero section*/
+
+
 #hero{
     width: 100vw;
     overflow: hidden;
@@ -13,7 +15,7 @@
     background-image: url(herobg_op.webp);
     background-size: 85vh;
     background-position-x: 45vw;
-    background-position-y: 40vh;
+    background-position-y: 20vh;
     background-repeat: no-repeat;
     
 }
@@ -30,7 +32,7 @@
     font-size: 1.7rem;
 }
 #hero h3{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-top: 15vh;
     width: 60vw;
 }
@@ -87,6 +89,8 @@ img{
   #spam{
       max-width: 10vw !important;
       overflow: hidden;
+      font-size: 1rem;
+      font-weight: 500;
 
   }
   textarea {
@@ -221,17 +225,20 @@ img{
     float: left;
     width: auto;
     height: auto;
-    padding-left: 2rem;
-    margin-top: 0;
+    padding-left: 0rem;
+    margin: 0 auto;
 }
 
 .nav div.logo a {
     text-decoration: none;
     color: var(--dark);
-    font-size: 2.2rem;
+    font-size: 2rem;
+    font-weight: 500;
     top: 0;
 }
-
+.nav div.logo strong{
+    color: var(--blue)
+}
 .nav div.logo a:hover {
     color: var(--blue);
 }
@@ -559,7 +566,14 @@ img{
 	}
 }
 
-  
+  /*navbar hide*/
+#mainListDiv{
+    display: none;
+}  
+.navTrigger{
+    display: none;
+}
+
 
 
 
